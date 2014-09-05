@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140905034634) do
+ActiveRecord::Schema.define(:version => 20140905044652) do
 
   create_table "ushas", :force => true do |t|
     t.string   "title"
-    t.string   "type"
+    t.string   "food_type"
     t.string   "category"
     t.string   "video"
     t.text     "recipe"
