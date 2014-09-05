@@ -1,0 +1,33 @@
+<h1>Listing ushas</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Type</th>
+    <th>Category</th>
+    <th>Video</th>
+    <th>Recipe</th>
+    <th>Explanation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ushas.each do |usha| %>
+  <tr>
+    <td><%= usha.title %></td>
+    <td><%= usha.type %></td>
+    <td><%= usha.category %></td>
+    <td><%= usha.video %></td>
+    <td><%= usha.recipe %></td>
+    <td><%= usha.explanation %></td>
+    <td><%= link_to 'Show', usha %></td>
+    <td><%= link_to 'Edit', edit_usha_path(usha) %></td>
+    <td><%= link_to 'Destroy', usha, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Usha', new_usha_path %>

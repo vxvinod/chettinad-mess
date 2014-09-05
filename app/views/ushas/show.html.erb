@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @usha.title %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @usha.type %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @usha.category %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%= @usha.video %>
+</p>
+
+<p>
+  <b>Recipe:</b>
+  <%= @usha.recipe %>
+</p>
+
+<p>
+  <b>Explanation:</b>
+  <%= @usha.explanation %>
+</p>
+
+
+<%= link_to 'Edit', edit_usha_path(@usha) %> |
+<%= link_to 'Back', ushas_path %>
