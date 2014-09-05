@@ -1,6 +1,9 @@
 ChettiarMess::Application.routes.draw do
   resources :ushas
 
+  match 'uploads', to: 'upload#index', via: [:get,:post]
+  match 'uploadfile', to: 'upload#uploadFile', via: [:get,:post]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
